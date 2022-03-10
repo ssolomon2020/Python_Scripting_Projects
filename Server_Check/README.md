@@ -4,7 +4,7 @@ It will check to see if a server is up or not on either port 80 or 443 through a
 <br><br>
 
 ### Attribution: ###
-Project is based off a script under the GNU GPL v3.0 license by Hillary Nyakundi:
+Project is based off a script under the GNU GPL v3.0 license written by FreeCodeCamp contributor Hillary Nyakundi:
 *https://github.com/larymak/Python-project-Scripts/blob/main/ServerChecker/*
 
 **Thank you for making this available**.
