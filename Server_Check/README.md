@@ -8,6 +8,7 @@ Project based off a script under the GNU GPL v3.0 license by Hillary Nyakundi:
 *https://github.com/larymak/Python-project-Scripts/blob/main/ServerChecker/*
 
 **Thank you for making this available**
+This was fun. :)
 
 #### Changes made: ####
 - Added comments.
