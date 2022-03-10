@@ -1,6 +1,6 @@
 # server_check.py #
 ### Short Description: ###
-It will check to see if a server is up or not on either port 80 or 443 through IPv4 standards.
+It will check to see if a server is up or not on either port 80 or 443 through an IPv4 socket.
 <br>
 
 ### Attribution: ###
