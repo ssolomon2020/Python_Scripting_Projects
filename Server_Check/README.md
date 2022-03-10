@@ -1,6 +1,6 @@
 # Server Check #
 
-####Attribution:###
+#### Attribution: ####
 Project based off a script under the GNU GPL v3.0 license by Hillary Nyakundi:
 *https://github.com/larymak/Python-project-Scripts/blob/main/ServerChecker/*
 
