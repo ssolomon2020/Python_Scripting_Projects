@@ -13,6 +13,7 @@ Project based off a script under the GNU GPL v3.0 license by Hillary Nyakundi:
 - Added exit() function to approprate lines.
 - Changed and added some variables.
 <br>
+
 ### Purpose: ###
 The script will check for a response from the website and port given by user input.
 - Reports based off the returned value of True or False from the checking function. 
