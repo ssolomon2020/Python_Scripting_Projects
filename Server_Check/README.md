@@ -1,5 +1,5 @@
 # Server Check #
-### Short Description ###
+### Short Description: ###
 It will check to see if a server is up or not.
 
 ### Attribution: ###
