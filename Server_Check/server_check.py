@@ -5,7 +5,8 @@
 # Project based off a script under the GNU GPL v3.0 license by Hillary Nyakundi:
 # https://github.com/larymak/Python-project-Scripts/blob/main/ServerChecker/
 
-# Script has been modified to my personal preferences.
+
+# Start of the actual script.
 
 # Importing socket module for connect method to pass a tuple of the socket method to check AF_INET for IPv4 addresses and SOCK_STREAM for open port used.
 import socket
