@@ -36,22 +36,22 @@ def main():
         print('\nWelcome to the World Wide Web site checker!\n.')
         # Ask user for web address input and assign to variable.
         url = input('Please enter the website: ')
-        # Continuous loop to check if the answer is incorrect.
+        # Continuous loop to check if the answer for protocol query is incorrect.
         while True:
             # Ask user for HTTPS check.
             port = input('.\nDo you want to check HTTPS? ')
-            # If no, assign port 80 and break loop.
+            # If no, assign port 80 and break protocol query loop.
             if port in {'n', 'N', 'no', 'No', 'NO'}:
                 print('.\nChecking port 80 access...')
                 port = 80
                 prtcl = 'HTTP'
                 break
-            # If yes, assign port 443 and break loop
+            # If yes, assign port 443 and break protocol query loop
             elif port  in {'y', 'Y', 'yes', 'Yes', 'YES'}:
                 port = 443
                 prtcl = 'HTTPS'
                 break
-            # Annoy user for correct input and continue the loop until condition is met.
+            # Annoy user for correct input and continue the protocol query loop until condition is met.
             else:
                 print(".\nPlease answer correctly! Let's try again...\n")
                 continue
@@ -66,7 +66,7 @@ def main():
             # Print the failure.
             print(f'.\nThe website {url} seems to be down or unreachable on {prtcl} port {port}!\nAre you sure you typed that in correctly?\n.')
 
-        # Another continuous loop to check if answer is correct.
+        # Another continuous loop to check if answer for another website query is correct.
         while True:
             # Ask the user if there is another address to check.
             con_quest = input(".\nIs there another website you'd like to check? ")
@@ -74,11 +74,11 @@ def main():
             if con_quest in {'n', 'N', 'no', 'No', 'NO'}:
                 print('Have a nice day! :D\n')
                 exit()
-            # If yes, print restart message break from answer check and continue the primary loop.
+            # If yes, print restart message break from another website query and continue the primary loop.
             elif con_quest in {'y', 'Y', 'yes', 'Yes', 'YES'}:
                 print("Alright! Let's start over...\n")
                 break
-            # Annoy user again for correct input and continue the loop until condition is met.
+            # Annoy user again for correct input and continue the loop until condition for another website query is met.
             else:
                 print(".\nPlease answer correctly! Let's try again...\n.")
                 continue
