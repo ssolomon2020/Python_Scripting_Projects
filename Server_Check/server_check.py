@@ -63,12 +63,15 @@ def main():
             # Print the failure.
             print(f'.\nThe website {url} seems to be down or unreachable on port {port}!\nAre you sure you typed that in correctly?\n.')
 
-        # Ask the user if there is another address to check. If not, break the while loop.
+        # Another continuous loop to check if answer is correct.
         while True:
+            # Ask the user if there is another address to check.
             con_quest = input(".\nIs there another website you'd like to check? ")
+            # If no, print a farewell message and exit the script.
             if con_quest in {'n', 'N', 'no', 'No', 'NO'}:
                 print('Have a nice day! :D\n')
                 exit()
+            # If yes, print restart message break from answer check and continue the primary loop.
             elif con_quest in {'y', 'Y', 'yes', 'Yes', 'YES'}:
                 print("Alright! Let's start over...\n")
                 break
@@ -83,6 +86,6 @@ if __name__ == '__main__':
     # If True, then call the main() function.
     main()
 
-# Exit the environment back to the command line interface.
+# Just in case, exit the environment back to the command line interface.
 exit()
 # End of Script. 
