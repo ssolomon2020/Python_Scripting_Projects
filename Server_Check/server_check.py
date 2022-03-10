@@ -44,10 +44,12 @@ def main():
             if port in {'n', 'N', 'no', 'No', 'NO'}:
                 print('.\nChecking port 80 access...')
                 port = 80
+                prtcl = 'HTTP'
                 break
             # If yes, assign port 443 and break loop
             elif port  in {'y', 'Y', 'yes', 'Yes', 'YES'}:
                 port = 443
+                prtcl = 'HTTPS'
                 break
             # Annoy user for correct input and continue the loop until condition is met.
             else:
@@ -58,11 +60,11 @@ def main():
         # Pass url and port variables as parameters to the up_check() function and check if it returns True.
         if up_check(f'{url}', int(port)):
             # Print the confirmation.
-            print(f'.\n{url} is up and running on port {port}!\n.')
+            print(f'.\n{url} is up and running on {prtcl} port {port}!\n.')
         # If the check returns False:
         else:
             # Print the failure.
-            print(f'.\nThe website {url} seems to be down or unreachable on port {port}!\nAre you sure you typed that in correctly?\n.')
+            print(f'.\nThe website {url} seems to be down or unreachable on {prtcl} port {port}!\nAre you sure you typed that in correctly?\n.')
 
         # Another continuous loop to check if answer is correct.
         while True:
