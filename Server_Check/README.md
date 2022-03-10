@@ -1,4 +1,6 @@
 # Server Check #
+### Short Description ###
+It will check to see if a server is up or not.
 
 ### Attribution: ###
 Project based off a script under the GNU GPL v3.0 license by Hillary Nyakundi:
