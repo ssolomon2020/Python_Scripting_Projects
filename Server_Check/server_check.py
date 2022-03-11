@@ -13,7 +13,7 @@ import socket
 
 # Defining function to check URL connection status with address passed as the url variable as a parameter.
 def up_check(url, port):
-    # Function description text.
+    # The upcheck() function description text.
     '''This function will make connection attempts to the server address given using a socket
        Returns: Connection status to the server.'''
     # Try/except statement block to return status as True or False.
@@ -30,32 +30,34 @@ def up_check(url, port):
 
 # Defining the main() function of the program.
 def main():
+    # The main() function description.
+    '''This function will run as the continous main program loop for the server_check.py script.'''
     # Initiate continuous loops of programatic steps for URL check while True.
     while True:
         # Print the salutations and new line.
         print('\nWelcome to the World Wide Web site checker!\n.')
         # Ask user for web address input and assign to variable.
         url = input('Please enter the website: ')
-        # Continuous loop to check if the answer for protocol query is incorrect.
+        # Continuous validator loop to check if the protocol query is answered incorrectly.
         while True:
             # Ask user for HTTPS check.
             port = input('.\nDo you want to check HTTPS? ')
-            # If no, assign port 80 and break protocol query loop.
+            # If no, assign port 80 and break validator loop.
             if port in {'n', 'N', 'no', 'No', 'NO'}:
                 print('.\nChecking port 80 access...')
                 port = 80
                 prtcl = 'HTTP'
                 break
-            # If yes, assign port 443 and break protocol query loop
+            # If yes, assign port 443 and break the validator loop
             elif port  in {'y', 'Y', 'yes', 'Yes', 'YES'}:
                 port = 443
                 prtcl = 'HTTPS'
                 break
-            # Annoy user for correct input and continue the protocol query loop until condition is met.
+            # Annoy user for correct input and continue validator loop until condition is met.
             else:
                 print(".\nPlease answer correctly! Let's try again...\n")
                 continue
-
+            # End of validator loop for protocol query.
 
         # Pass url and port variables as parameters to the up_check() function and check if it returns True.
         if up_check(f'{url}', int(port)):
@@ -66,13 +68,13 @@ def main():
             # Print the failure.
             print(f'.\nThe website {url} seems to be down or unreachable on {prtcl} port {port}!\nAre you sure you typed that in correctly?\n.')
 
-        # Another continuous loop to check if answer for another website query is correct.
+        # Another continuous validator loop to check if another website query is answered correctly.
         while True:
             # Ask the user if there is another address to check.
             con_quest = input(".\nIs there another website you'd like to check? ")
             # If no, print a farewell message and exit the script.
             if con_quest in {'n', 'N', 'no', 'No', 'NO'}:
-                print('Have a nice day! :D\n')
+                print('Exiting Server Check... Have a nice day! :D\n')
                 exit()
             # If yes, print restart message break from another website query and continue the primary loop.
             elif con_quest in {'y', 'Y', 'yes', 'Yes', 'YES'}:
@@ -82,6 +84,7 @@ def main():
             else:
                 print(".\nPlease answer correctly! Let's try again...\n.")
                 continue
+            # End of validator loop for another website query.
 
 
 # Check if this is the main script by checking if the __name__ of the script is __main__.
@@ -90,5 +93,6 @@ if __name__ == '__main__':
     main()
 
 # Just in case, exit the environment back to the command line interface.
+print('Exiting Server Check...')
 exit()
 # End of Script. 
