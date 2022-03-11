@@ -14,9 +14,9 @@ This was fun. :)
 #### Changes made: ####
 - Added comments.
 - Added main function.
-- Added while loops to check responses.
+- Added validator while loops to check responses.
 - Added exit() function to approprate lines.
-- Changed and added some variables.
+- Added and changed some variables.
 <br>
 
 ### Purpose: ###
